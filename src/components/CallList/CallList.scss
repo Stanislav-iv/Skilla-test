@@ -1,0 +1,76 @@
+.callList {
+  margin-top: 50px;
+  width: 1440px;
+  height: 2025px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 5px 0px #e9edf3;
+
+  .list__header {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.72px;
+    color: #5e7793;
+    .list__type {
+      margin-right: 43px;
+    }
+    .list__time {
+      margin-right: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.72px;
+      color: #5e7793;
+      cursor: pointer;
+      user-select: none;
+
+      .arrow {
+        margin-left: 5px;
+        border: solid #adbfdf;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+
+      .down {
+        margin-bottom: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+    .list__employee {
+      margin-right: 55px;
+    }
+    .list__call {
+      margin-right: 258px;
+    }
+    .list__source {
+      margin-right: 180px;
+    }
+    .list__grade {
+      margin-right: 380px;
+    }
+  }
+  .list__item {
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,137 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  .item__line {
+    border-bottom: 1px solid #eaf0fa;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .item__info {
+    display: flex;
+    align-items: center;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 65px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    .item__status {
+      width: 24px;
+      margin-right: 48px;
+    }
+    .item__time {
+      width: 38px;
+      margin-right: 32px;
+    }
+    .item__ava {
+      width: 32px;
+      margin-right: 96px;
+    }
+    .item__number {
+      width: 246px;
+      margin-right: 80px;
+    }
+    .item__source {
+      width: 197px;
+    }
+    .item__record {
+      width: 352px;
+      margin-left: 300px;
+    }
+    .item__duration {
+      width: 50px;
+      margin-left: 592px;
+    }
+  }
+  .custom-audio-player {
+    display: flex;
+    align-items: center;
+
+    width: 352px;
+    height: 48px;
+    background-color: #eaf0fa;
+    border-radius: 48px;
+    padding: 8px 12px;
+
+    .audio-duration {
+      font-size: 15px;
+      margin-right: 10px;
+      color: #122945;
+    }
+
+    .rhap_container {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      width: 100%;
+      padding: 0;
+
+      .rhap_main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .rhap_progress-section {
+          flex-grow: 1;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 150px;
+          .rhap_time {
+            font-size: 14px;
+          }
+          .rhap_progress-bar {
+            height: 4px;
+            border-radius: 2px;
+            background-color: #d0e3fa;
+          }
+
+          .rhap_progress-indicator {
+            background-color: #4a90e2;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            top: -3px;
+          }
+        }
+
+        .rhap_controls-section {
+          display: flex;
+          align-items: center;
+
+          .rhap_play-pause-button {
+            background-color: transparent;
+            color: #4a90e2;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .download-btn {
+      margin-left: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .close-btn {
+      margin-left: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
