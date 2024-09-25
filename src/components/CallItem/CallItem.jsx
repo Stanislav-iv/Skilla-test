@@ -37,7 +37,7 @@ const CallItem = ({ item }) => {
       <div className="item__info">
         <div className="item__status">
           {((item.in_out === 1) & (item.status === "Не дозвонился") && (
-            <img src="/src/assets/failCall.svg" alt="in" />
+            <img src="/failCall.svg" alt="in" />
           )) ||
             null}
           {((item.in_out === 0) & (item.status === "Не дозвонился") && (
