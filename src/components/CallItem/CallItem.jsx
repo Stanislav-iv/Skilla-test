@@ -2,7 +2,6 @@ import { useGetRecordQuery } from "../../redux/callApi";
 import React, { useRef } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import failCall from "../../assets/failCall.svg";
 import "./CallItem.scss";
 const CallItem = ({ item }) => {
   const audioPlayerRef = useRef(null);
@@ -38,11 +37,11 @@ const CallItem = ({ item }) => {
       <div className="item__info">
         <div className="item__status">
           {((item.in_out === 1) & (item.status === "Не дозвонился") && (
-            <img src={failCall} alt="in" />
+            <img src="/src/assets/failCall.svg" alt="in" />
           )) ||
             null}
           {((item.in_out === 0) & (item.status === "Не дозвонился") && (
-            <img src="src\assets\notCall.svg" alt="not" />
+            <img src="/src/assets/notCall.svg" alt="not" />
           )) ||
             null}
           {((item.in_out === 1) & (item.status === "Дозвонился") && (
