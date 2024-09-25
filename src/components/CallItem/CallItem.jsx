@@ -41,15 +41,15 @@ const CallItem = ({ item }) => {
           )) ||
             null}
           {((item.in_out === 0) & (item.status === "Не дозвонился") && (
-            <img src="/src/assets/notCall.svg" alt="not" />
+            <img src="/notCall.svg" alt="not" />
           )) ||
             null}
           {((item.in_out === 1) & (item.status === "Дозвонился") && (
-            <img src="src\assets\incomingCall.svg" alt="in" />
+            <img src="/incomingCall.svg" alt="in" />
           )) ||
             null}
           {((item.in_out === 0) & (item.status === "Дозвонился") && (
-            <img src="src\assets\outgoingCall.svg" alt="out" />
+            <img src="/outgoingCall.svg" alt="out" />
           )) ||
             null}
         </div>
@@ -77,17 +77,17 @@ const CallItem = ({ item }) => {
                   layout="horizontal-reverse"
                   showDownloadProgress={false}
                   customIcons={{
-                    play: <img src="src\assets\play.svg" alt="Play" />,
-                    pause: <img src="src\assets\play.svg" alt="Pause" />,
+                    play: <img src="/play.svg" alt="Play" />,
+                    pause: <img src="/play.svg" alt="Pause" />,
                   }}
                 />
 
                 <a href={audioUrl} download className="download-btn">
-                  <img src="src\assets\download.svg" alt="Download" />
+                  <img src="/download.svg" alt="Download" />
                 </a>
 
                 <button className="close-btn" onClick={handleStopAudio}>
-                  <img src="src\assets\close.svg" alt="Close" />
+                  <img src="/close.svg" alt="Close" />
                 </button>
               </div>
             </div>

@@ -37,7 +37,7 @@
       border-color: #002cfb;
     }
     .calendar {
-      background-image: url("/src/assets/icon-calendar.svg");
+      background-image: url("/icon-calendar.svg");
       width: 16px;
       height: 18px;
       margin-right: 5px;
@@ -47,7 +47,7 @@
       display: flex;
 
       &:hover .calendar {
-        background-image: url("/src/assets/icon-calendarHover.svg");
+        background-image: url("/icon-calendarHover.svg");
       }
     }
 
@@ -136,14 +136,14 @@
       color: #adbfdf;
     }
     .custom-date__calendar {
-      background-image: url("/src/assets/icon-calendar.svg");
+      background-image: url("/icon-calendar.svg");
       background-size: cover;
       width: 16px;
       height: 18px;
       border: none;
       cursor: pointer;
       &:hover .custom-date__calendar {
-        background-image: url("/src/assets/icon-calendarHover.svg");
+        background-image: url("/icon-calendarHover.svg");
       }
     }
     .react-datepicker {
